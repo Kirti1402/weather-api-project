@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="heading">
+        <h1>Weather</h1>
+    </nav>
+    <div class="container-center">
+    <div class="input-container">
+        <label>City<input type="text" id="input-city" placeholder="Enter City Name"></label>
+        <button id="check">Check</button>
+        <p class="error"></p>
+    </div>
+        <div class="output">
+            <span class="emoji"></span><h2 id="city-name"></h2>
+            <span id="degree"></span>
+            <p id="humidity"></p>
+            <p id="visibility"></p>
+        </div>
+</div>
+    <script src="/app.js"></script>
+</body>
+</html>
