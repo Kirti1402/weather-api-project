@@ -36,6 +36,11 @@ function weatherApiCall(){
         .then((response) => response.json())
         .then((data) => {
             if(data.cod != 200){
+                emoji.innerText = "";
+                cityName.innerText = "";
+                degree.innerText = "";
+                humiditySel.innerText = "";
+                visibilityDis.innerText = "";
                 var errorMessage = data.message;
                 inputCityError.style.color = 'red';
                 inputCityError.innerText = errorMessage+'';
